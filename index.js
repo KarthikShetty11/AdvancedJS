@@ -8,6 +8,8 @@ for(var i=0; i<totalDrums; i++)
           //this.style.color = "white";
           var buttonInnerHtml = this.innerHTML;
           makeSound(buttonInnerHtml);
+
+          buttonAnimation(buttonInnerHtml);
       }
     )
 
@@ -18,6 +20,8 @@ for(var i=0; i<totalDrums; i++)
   document.addEventListener("keydown", function(event)
     {
       makeSound(event.key);
+
+      buttonAnimation(event.key);
     }
   )
 
@@ -60,14 +64,22 @@ for(var i=0; i<totalDrums; i++)
                     tom4.play();
                     break;
             
-                default:
+                default:console.log(buttonInnerHtml);
                     break;
             }
         }
 
         
       
-     
+ function buttonAnimation(currentKey) 
+ {   
+     var activeButton = document.querySelector("."+currentKey);
+     activeButton.classList.add("pressed");
+
+     setTimeout(function(){
+         activeButton.classList.remove("pressed")
+        }, 100 )
+ } 
 
     
 
