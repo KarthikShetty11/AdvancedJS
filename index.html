@@ -90,28 +90,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) GTM TO PIANO-->
   
   <script>
-    dataLayer.push({
-                'env_work': 'PROD',
-                'responsive_layout': Liferay.Util.getWindowWidth() < 1025 ? 'mobile' : 'desktop',
-                'language': 'fr',
-                'site_name': 'france-particuliers',
-                'region': '',
-                'country': '',
-                'segment': '',
-                'sub-segment': '',
-                'site_country' :'France',
-                'site_profile' :'retail',
-                'page_name': page_name,
-                'device': 'desktop',
-                'guest': true,
-                'live': true,
-                'backoffice': false,
-                'cookie_disclaimer_required': false,
-                'cmp_cookie_name': "cookie-agreed-categories-24124",
-                'form_status' : "",
-                'form_name': "",
-                'page_type': page_type
-            })
+    
+ var pageTitle = document.title;
+    
+ dataLayer.push({
+ 'pagePath': 'https://drumkit-online.netlify.app/',
+ 'pageTitle': pageTitle,
+ 'env_work': 'development', 
+ 'language': 'en',
+ 'error_code':''
+});
+//     dataLayer.push({
+//                 'env_work': 'PROD',
+//                 'responsive_layout': Liferay.Util.getWindowWidth() < 1025 ? 'mobile' : 'desktop',
+//                 'language': 'fr',
+//                 'site_name': 'france-particuliers',
+//                 'region': '',
+//                 'country': '',
+//                 'segment': '',
+//                 'sub-segment': '',
+//                 'site_country' :'France',
+//                 'site_profile' :'retail',
+//                 'page_name': page_name,
+//                 'device': 'desktop',
+//                 'guest': true,
+//                 'live': true,
+//                 'backoffice': false,
+//                 'cookie_disclaimer_required': false,
+//                 'cmp_cookie_name': "cookie-agreed-categories-24124",
+//                 'form_status' : "",
+//                 'form_name': "",
+//                 'page_type': page_type
+//             })
         
   </script>
   
