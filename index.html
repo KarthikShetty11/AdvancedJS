@@ -94,7 +94,7 @@ End Google Tag Manager GTM SS App engine-->
 </head>
 
 <body>
-  <!-- TAGCOMMANDER START --
+  <!-- TAGCOMMANDER START -->
 <script type="text/javascript" src="https://cdn.tagcommander.com/6592/tc_AXAGOBOSandBox_21.js"></script>
 <noscript><iframe src="//redirect6592.tagcommander.com/utils/noscript.php?id=21&amp;mode=iframe" width="1" height="1" rel="noindex,nofollow"></iframe></noscript>
 <!-- TAG COMMANDER END -->
@@ -157,12 +157,27 @@ End Google Tag Manager (noscript) GTM SS App engine-->
 
   <h1 id="title">Drum 🥁 Kit</h1>
   <div class="set">
-    <button class="w drum" onclick=
-"tC.event.download(this, {"click_text":"Download", "click_url": "https://webcast1.axa.com/files/Documents/file/164/64cb683d24873.pdf"})">w</button>
+    <button class="w drum" onclick="tC.event.download(this, {"click_text":"Download", "click_url": "https://webcast1.axa.com/files/Documents/file/164/64cb683d24873.pdf"})" >w</button>
     <button class="a drum" onclick="javascript:return tc_events_1(this,"Downloadd", {'click_text':'Download',
-‘click_url': 'https://webcast1.axa.com/files/Documents/file/164/64cb683d24873.pdf',});">a</button>
-    <button class="s drum" onclick="dataLayer.push({'event': 'clicked','buttonName' : '});">s</button>
-    <button class="d drum" onclick="dataLayer.push({'event': 'clicked','buttonName' : 'd'});">d</button>
+‘click_url': 'https://webcast1.axa.com/files/Documents/file/164/64cb683d24873.pdf'})">a</button>
+    <button class="s drum" onclick="cact('trigger','page_view', {
+  page_type: 'product_list',
+  page_name: 'Best sellers',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
+});">s</button>
+    <button class="d drum" onclick="cact('trigger','select_content', {
+  content_type: 'product',
+  item_id: 'I_12345',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
+});">d</button>
     <button class="j drum" onclick="dataLayer.push({'event': 'clicked','buttonName' : 'j'});">j</button>
     <button class="k drum" onclick="dataLayer.push({'event': 'clicked','buttonName' : 'k'});">k</button>
     <button class="l drum" onclick="dataLayer.push({'event': 'clicked','buttonName' : 'l'});">l</button>
